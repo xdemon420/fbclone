@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* this creates a reusable class. the .icon is the what youll
+type in the "" after classname. @layer refers to the component
+its being used in. @apply allows you to write tailwind*/
+
+@layer components {
+    .icon {
+        @apply hidden xl:inline-flex p-2 h-[40px] w-10 bg-gray-200
+        rounded-full text-gray-700 cursor-pointer hover:bg-gray-300
+        hover:text-blue-700;
+    }
+}
